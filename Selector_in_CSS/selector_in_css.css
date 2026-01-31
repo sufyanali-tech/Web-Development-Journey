@@ -1,0 +1,19 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* h1 is tag selector which we select from our html */
+h1 {
+    color: red;
+}
+/* (.) is class selector identity it means this is class selector */
+.select {
+
+    color: blue;
+}
+/* (#) is id selector identity it means this is id selector */
+#select-from-id {
+
+    color: aquamarine;
+}
