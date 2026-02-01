@@ -5,11 +5,16 @@
 }
 
 h1 {
-
     
+    padding: 20px;
     background-color: chartreuse;
+    text-align: center;
+    margin: 20px;
 }
 
 p {
-    background-color: blueviolet;
+    background-color: #BDE8F5;
+    padding: 30px;
+    text-align: center;
+    margin: 20px;
 }
