@@ -1,0 +1,82 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.parent-div {
+
+    width: 800px;
+    height: 800px;
+    margin-left: 100px;
+    background: linear-gradient(90deg,rgba(55, 89, 222, 1) 0%, rgba(73, 131, 203, 1) 49%, rgba(75, 136, 201, 1) 55%, rgba(32, 73, 122, 1) 100%);
+    position: relative;
+}
+.child-div1 {
+
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    top: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.child-div2 {
+
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    top: 0;
+    right: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.child-div3 {
+
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    bottom: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.child-div4 {
+
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    bottom: 0;
+    right: 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+}.child-div5 {
+
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
