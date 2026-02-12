@@ -1,0 +1,29 @@
+* {
+    /* padding: 0px; */
+    /* margin: 0px; */
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: beige;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+section {
+
+    width: 600px;
+    height: 400px;
+    background-color: white ;
+}
+ul {
+    border: 2px solid black;
+    list-style:decimal;
+    /* list-style-type: circle; */
+}
+li {
+    padding: 5px;
+}
