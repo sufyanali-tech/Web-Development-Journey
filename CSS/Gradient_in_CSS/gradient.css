@@ -7,13 +7,12 @@ section {
 
     width: 100%;
     height: 100vh;
-    /* background-image: linear-gradient(to left,red, yellow); */
-    /* background-image: linear-gradient(to right,red, yellow); */
-    /* background-image: linear-gradient(to bottom,red, yellow); */
-    /* background-image: linear-gradient(to top,red, yellow); */
-    /* background-image: linear-gradient(to bottom right,red, yellow); */
-    /* background-image: linear-gradient(to bottom left,red, yellow); */
-    /* background-image: linear-gradient(to top right,red, yellow); */
-    /* background-image: linear-gradient(to top left,red, yellow); */
-    background-image: radial-gradient(red,yellow);
+    /* background-image: repeatinglinear-gradient(to bottom right, red, yellow 500px); */
+    background: linear-gradient(90deg,
+    rgba(37, 47, 89, 1) , 
+    rgba(100, 217, 148, 1) , 
+    rgba(145, 133, 22, 1) );
+    
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
 }
