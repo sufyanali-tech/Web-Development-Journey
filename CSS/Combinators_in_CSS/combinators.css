@@ -1,0 +1,13 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.section-1 {
+
+    font-size:xx-large;
+}
+.section-1 p + div {
+
+    color: green;
+}
