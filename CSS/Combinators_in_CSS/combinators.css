@@ -7,7 +7,7 @@
 
     font-size:xx-large;
 }
-.section-1 p + div {
+.section-1 > p {
 
     color: green;
 }
