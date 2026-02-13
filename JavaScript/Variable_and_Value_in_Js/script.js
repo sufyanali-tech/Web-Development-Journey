@@ -10,4 +10,3 @@ let populationInMillions = 24
 console.log(country);
 console.log(continent);
 console.log(populationInMillions);
-
