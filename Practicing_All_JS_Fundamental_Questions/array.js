@@ -30,3 +30,15 @@ let sentence = words.reduce((acc, word) => acc + " " + word);
 
 console.log(sentence);
 console.log(words);
+
+
+
+let array = [1,2,3,4,5];
+
+let result = array.reduce((a,b) => { 
+
+    console.log(a,b);
+    return a + b;
+},0)
+
+console.log(result);    // if initiaze accumulator with zero then current will start from 2nd element
