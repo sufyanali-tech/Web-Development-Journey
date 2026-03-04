@@ -24,21 +24,34 @@
 
 // Using Reduce Method in JavaScript
 
-let words = ["Hello", "World"];
+// let words = ["Hello", "World"];
 
-let sentence = words.reduce((acc, word) => acc + " " + word);
+// let sentence = words.reduce((acc, word) => acc + " " + word);
 
-console.log(sentence);
-console.log(words);
+// console.log(sentence);
+// console.log(words);
 
 
 
-let array = [1,2,3,4,5];
+// let array = [1,2,3,4,5];
 
-let result = array.reduce((a,b) => { 
+// let result = array.reduce((a,b) => { 
 
-    console.log(a,b);
-    return a + b;
-},0)
+//     console.log(a,b);
+//     return a + b;
+// },0)
 
-console.log(result);    // if initiaze accumulator with zero then current will start from 2nd element
+// console.log(result);    // if initiaze accumulator with zero then current will start from 2nd element
+
+let newArray = [1,2,3,4,5,6,7,8,9,10];
+
+let afterCondition = newArray.filter((value) => {
+
+    if(value > 5) {
+
+        return true;
+    }
+})
+
+console.log(newArray);
+console.log(afterCondition)
