@@ -1,3 +1,5 @@
+// Question Number 1
+
 function counter() {
 
     let count = 0;
