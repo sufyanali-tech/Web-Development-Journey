@@ -12,9 +12,9 @@
 
 let array = [1,2,3,4,5,6];
 
-let [a,b] = array;
+let [a,b,,c] = array;
 
 console.log(array);
 
-console.log(a,b);
+console.log(a,b,c);
 
