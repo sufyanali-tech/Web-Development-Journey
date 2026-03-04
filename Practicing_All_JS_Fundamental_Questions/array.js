@@ -43,6 +43,8 @@
 
 // console.log(result);    // if initiaze accumulator with zero then current will start from 2nd element
 
+//  Filter method in js
+
 let newArray = [1,2,3,4,5,6,7,8,9,10];
 
 let afterCondition = newArray.filter((value) => {
