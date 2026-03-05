@@ -7,3 +7,12 @@ let obj = {
 let obj2 = {...obj}
 
 console.log(obj2);
+
+
+// object assign
+
+let obj3 = Object.assign({address : "Punjab"}, obj)
+
+console.log(obj3);
+console.log(obj);
+
