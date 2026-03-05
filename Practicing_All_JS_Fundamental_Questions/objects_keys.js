@@ -9,3 +9,9 @@ let obj = {
 let object_keys = Object.keys(obj);
 
 console.log(object_keys);
+
+// Object Entries Arrays of Arrays
+
+let object_entries = Object.entries(obj);
+
+console.log(object_entries);
