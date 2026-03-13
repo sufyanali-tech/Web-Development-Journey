@@ -14,3 +14,19 @@
 let h1 = document.querySelector("#title");
 
 console.log(h1.textContent);
+
+// 2️⃣ Change Text
+
+// Create:
+
+// <p id="message">Old Message</p>
+
+// Using DOM:
+
+// Change text to:
+
+// New Message Loaded
+
+let p = document.querySelector("#message");
+
+p.textContent = "New Message Loaded";
