@@ -45,3 +45,21 @@ p.textContent = "New Message Loaded";
 let allParagraph = document.querySelectorAll(".text")
 
 console.log(allParagraph);
+
+// 4️⃣ Change Style
+
+// Create:
+
+// <h2 id="heading">Learning DOM</h2>
+
+// Using DOM:
+
+// Change:
+
+// text color → red
+
+// font size → 40px
+
+let h2 = document.querySelector("#heading");
+h2.style.color = "red";
+h2.style.fontSize = "40px";
