@@ -5,3 +5,11 @@ let h1 = document.createElement("h1")
 h1.textContent = "Hi Hello From JS"
 
 document.querySelector("body").prepend(h1) // before script file append() after script file
+
+// changing in the div
+
+let anotherTag = document.createElement("h1");
+
+anotherTag.textContent = "four tag";
+
+document.querySelector("div").appendChild(anotherTag)
