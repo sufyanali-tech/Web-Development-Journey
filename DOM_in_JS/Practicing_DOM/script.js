@@ -63,3 +63,24 @@ console.log(allParagraph);
 let h2 = document.querySelector("#heading");
 h2.style.color = "red";
 h2.style.fontSize = "40px";
+
+// 5️⃣ Select by Tag Name
+
+// Create 4 list items.
+
+// Using JavaScript:
+
+// select all li
+
+// print them in console.
+
+let listItems = document.querySelector(".unordered-list");
+
+for(let i = 0; i < 4; i++) {
+
+    let li = document.createElement("li");
+    li.textContent = `list ${i}`;
+    listItems.appendChild(li);
+
+    console.log(li.textContent);
+}
