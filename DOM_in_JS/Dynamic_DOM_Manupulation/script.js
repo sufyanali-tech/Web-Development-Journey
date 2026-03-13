@@ -13,3 +13,11 @@ let anotherTag = document.createElement("h1");
 anotherTag.textContent = "four tag";
 
 document.querySelector("div").appendChild(anotherTag)
+
+// Removing appendchild
+
+let parent = document.querySelector("div");
+
+let child = parent.removeChild(anotherTag)
+
+console.log(child);
