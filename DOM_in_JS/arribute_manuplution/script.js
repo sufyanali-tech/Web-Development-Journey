@@ -13,3 +13,12 @@ let a_arribute = document.querySelector("a")
 const b = a_arribute.getAttribute("href")
 
 console.dir(b)
+
+// Remove Attribute in JS
+
+let removeAttribute = document.querySelector("a");
+
+
+removeAttribute.removeAttribute("href")
+
+// console.dir(removeAttribute)
