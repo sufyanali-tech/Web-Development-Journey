@@ -1,5 +1,15 @@
+// getting Attribute in JS
+
 let a = document.querySelector("a");
 
-a.setAttribute("href","https://www.facebook.com")
+a.setAttribute("href","https://www.facebook.com") // Attribute Manupulating in JS    
 
 console.dir(a)
+
+// setting attribute in Js
+
+let a_arribute = document.querySelector("a")
+
+const b = a_arribute.getAttribute("href")
+
+console.dir(b)
