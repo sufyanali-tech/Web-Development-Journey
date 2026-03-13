@@ -30,3 +30,18 @@ console.log(h1.textContent);
 let p = document.querySelector("#message");
 
 p.textContent = "New Message Loaded";
+
+
+// 3️⃣ Select by Class
+
+// Create 3 paragraphs with class text.
+
+// Using JavaScript:
+
+// Select all paragraphs
+
+// Print them in console.
+
+let allParagraph = document.querySelectorAll(".text")
+
+console.log(allParagraph);
