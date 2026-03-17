@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding : 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: "Urbanist";
+        }
+
+        #main {
+            padding: 30px;
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(44, 43, 43);
+        }
+        input {
+            /* display: none; */
+            display: block;
+        }
+        /* #btn {
+            padding: 10px 20px;
+            color: white;
+            background-color: rgb(59, 124, 68);
+            border-radius: 10px;
+            font-weight: 500;
+        }
+        #btn:hover {
+
+            background-color: rgb(58, 88, 58);
+        } */
+        
+        .card {
+            margin-top: 50px;
+            padding: 20px;
+            border: 1px solid #555;
+            background-color: rgb(44, 43, 43);
+            display: inline-block;
+            border-radius: 10px;
+            max-width: 300px;
+            color: white;
+        }
+        .profile {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-bottom: 7px;
+            overflow: hidden; /* Remove extra cover of the image*/
+        }
+        .profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card p {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        .card h5 {
+            margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <form action="">
+            <input type="text" placeholder="profile pic">
+            <input type="text" placeholder="name">
+            <input type="text" placeholder="occupation">
+            <input type="text" placeholder="info">
+            <input type="submit">
+        </form> 
+
+            <!-- <div class="card">
+                <div class="profile">
+                    <img src="https://images.unsplash.com/photo-1773240306707-2a07fc569fde?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3Mnx8fGVufDB8fHx8fA%3D%3D" alt="Picture not loaded">
+                </div>
+                <h3>Sufyan Ali</h3>
+                <h5>Problem Solver</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt saepe sit ipsum inventore quae accusamus, qui voluptates quia unde corrupti odio quo laboriosam dolores sint voluptatem, facilis consectetur. Assumenda non iusto provident natus est minima culpa tempore debitis nam nihil!</p>
+            </div> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
