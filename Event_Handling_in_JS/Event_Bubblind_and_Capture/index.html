@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        #parent {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+        }
+        #smaller {
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+        }
+        #smallest {
+            width: 300px;
+            height: 300px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="parent">
+        <div id="smaller">
+            <div id="smallest">
+                <button id="child">Click here</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
