@@ -17,3 +17,4 @@ let setIntervalVariable = setInterval(function(){
 // ClearInterval 
 
 clearInterval(setTimeOut)
+clearInterval(setIntervalVariable)
