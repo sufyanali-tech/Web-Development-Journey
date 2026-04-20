@@ -1,6 +1,6 @@
 // Set TimeOut 
 
-setTimeout(function() {
+let setTimeOut = setTimeout(function() {
 
     console.log("My name is Sufyan Ali");
     
@@ -8,8 +8,12 @@ setTimeout(function() {
 
 // Set Intervel
 
-setInterval(function(){
+let setIntervalVariable = setInterval(function(){
 
     console.log("Hello World");
     
 },2000)
+
+// ClearInterval 
+
+clearInterval(setTimeOut)
