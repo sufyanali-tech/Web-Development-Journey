@@ -6,8 +6,7 @@ console.log(this); // window
 
 function abcd() {
 
-    console.log(this); // window
-    
+    console.log(this); // window   
 }
 abcd() 
 
@@ -30,7 +29,6 @@ let myObj = {
 
 myObj.sayName()
 
-
 let Obj = {
     name : "Sufyan Ali",
     age : 20,
@@ -52,9 +50,8 @@ let anotherObject = {
     sayName : function() {
 
         function abcd() {
-
             console.log(this); // refer to the window 
-            
+
         } abcd()
     }
 }
@@ -68,9 +65,7 @@ let anotherObjectwithArrow = {
     sayName : () => {
 
         console.log(this); // refer to the window because parent is anotherObjectwithArrow which is declare in global 
-        
     }
-
 }
 
 anotherObjectwithArrow.sayName()
@@ -82,8 +77,7 @@ class Personal {
     constructor() {
 
         this.a = 20
-        console.log(this); // refer to the black object 
-        
+        console.log(this); // refer to the black object       
     }
 }
 
