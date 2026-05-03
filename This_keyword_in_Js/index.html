@@ -1,14 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JavaScript Fundamentals - Part 2</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1>this keyword</h1>
-    
-    <script src="call_apply_bind.js"></script>
+    <header class="page-header">
+      <h1>Build Your <span>Profile</span></h1>
+      <p>Fill in your details and see your card come to life below.</p>
+    </header>
+
+    <!-- ── FORM ── -->
+    <form class="form-wrapper" id="profile-form-section">
+      <div class="form-header">
+        <h2>Your Profile Details</h2>
+        <p>This information will be shown on your card.</p>
+      </div>
+
+      <div class="form-body">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="input-name">Full Name</label>
+            <input
+              type="text"
+              id="input-name"
+              placeholder="e.g. Sophia Carter"
+            />
+          </div>
+          <div class="form-group">
+            <label for="input-role">Role / Title</label>
+            <input type="text" id="input-role" placeholder="e.g. UI Designer" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="input-bio">Bio</label>
+          <textarea
+            id="input-bio"
+            placeholder="Write a short bio — who you are, what you do, what drives you..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Photo URL</label>
+          <div class="photo-preview-row">
+            <div id="photo-circle">
+              <span class="placeholder-icon">👤</span>
+              <img id="preview-img" src="" alt="preview" />
+            </div>
+            <div class="photo-input-wrap">
+              <input
+                type="url"
+                id="input-photo"
+                placeholder="https://example.com/photo.jpg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submit-btn">
+          Generate My Profile Card
+        </button>
+      </div>
+    </form>
+
+    <!-- ── SAMPLE CARDS ── -->
+    <div class="section-label">
+      <h3>Profile Cards</h3>
+      <p>Sample cards — yours will appear here when you submit.</p>
+    </div>
+
+     <div class="cards-grid" id="cards-container"> 
+      <div class="profile-card" id="card-1">
+        <div class="card-banner"></div>
+        <div class="card-body">
+          <div class="avatar-wrap">
+            <img
+              class="avatar-img"
+              id="card1-img"
+              src="https://i.pravatar.cc/150?img=47"
+              alt="Sophia Carter"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              "
+            />
+            <div
+              class="avatar-fallback"
+              id="card1-fallback"
+            >
+              SC
+            </div>
+          </div>
+          <div class="card-name" id="card1-name">Sophia Carter</div>
+          <span class="card-role" id="card1-role">UI Designer</span>
+          <div class="card-divider"></div>
+          <p class="card-bio" id="card1-bio">
+            Crafting intuitive digital experiences with a love for clean
+            interfaces and purposeful motion. 5 years in product design.
+          </p>
+        </div>
+      </div> 
+
+     
+     <script src="project_on_thiskeyword.js"></script> 
   </body>
 </html>
