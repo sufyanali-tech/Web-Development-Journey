@@ -37,7 +37,7 @@ body {
     background-color: rgb(16, 161, 82);
     border: 1px solid rgb(16, 161, 82);
     cursor: pointer;
-    color: white;
+    color: black;
     font-weight: 500;
 }
 .login-with-number {
@@ -47,12 +47,77 @@ body {
     flex-direction: column;
     gap: 15px;
 }
+.country-selection {
+    padding: 15px;
+    width: 320px;
+    border-radius: 25px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left {
+    display: flex;
+    gap: 10px;
+}
+.country-code-selection {
+    max-height: 250px;
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    overflow-y: auto;
+    top: 400px;
+}
+.country-code-selection::-webkit-scrollbar {
+  width: 6px;
+}
+.country-code-selection::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.country-code-selection::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.country-code-selection::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.search-bar {
+    width: 90%;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: 1px solid grey;
+}
+.search-bar:focus {
+    
+    outline: none;
+    border: 2px solid green;
+    
+}
+.search-bar:hover {
 
+    background-color: rgb(236, 234, 234);
+    border: 1px solid g;
+}
+li {
+    list-style: none;
+    color: black;
+    padding: 10px;
+    margin: 5px 5px;
+    border-radius: 10px;
+}
+li:hover {
+  background-color: rgb(218, 215, 215);  
+}
 .telephone-number {
 
     padding: 15px;
-    width: 250px;
-    border-radius: 20px;
+    width: 320px;
+    border-radius: 25px;
     border: 1px solid black;
 }
 .telephone-number:focus {
