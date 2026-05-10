@@ -19,7 +19,7 @@ class Employee extends User {
     createEmp() {
         let h1 = document.createElement("h1");
         h1.textContent = `User create with role : ${this.empRole}`
-        console.log(h1);
+        document.body.appendChild(h1)
         
     }
 }
@@ -34,13 +34,46 @@ class Manager extends User {
     createMang() {
         let h1 = document.createElement("h1");
         h1.textContent = `User create with role : ${this.mangRole}`        
+        document.body.appendChild(h1)
+    }
+    remove() {
+        document.querySelectorAll("h1").forEach(function(elem) {
+
+            elem.remove()
+        })
     }
 }
 
 let emp1 = new Employee("Sufyan Ali",22,"Male","alikhattak5252@gmail.com","Employee")
-let emp2 = new Employee("Rehan Ali",23,"Male","abc@gmail.com","Employee")
-let emp3 = new Employee("Wasif Ali",25,"Male","xyz5252@gmail.com","Employee")
 
 let mang1 = new Manager("Hussain Ali",22,"Male","jkl@gmail.com","Manager")
 
-console.log(emp1.createEmp());
+emp1.createEmp()
+emp1.createEmp()
+emp1.createEmp()
+emp1.createEmp()
+
+mang1.createMang()
+mang1.createMang()
+
+// mang1.remove()
+
+
+// Prototypal inheritance in JS
+
+let obj1 = {
+    name: "Sufyan Ali",
+    age: 22,
+    hobby: function() {
+        console.log("Playing Cricket");
+        
+    }
+}
+
+let obj2 = Object.create(obj1);
+
+console.log(obj2.hobby);
+
+obj2.meal = function() {
+    console.log("I like home simple meal");
+}
