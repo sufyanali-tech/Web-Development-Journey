@@ -16,6 +16,7 @@ buttons.forEach(function (btn) {
             if (operent2) {
 
                 userValueStore = operent2
+                operent2 = null
                 operent1 = ""
                 input.textContent = "0"
             }
@@ -25,7 +26,6 @@ buttons.forEach(function (btn) {
                 operent1 = ""
                 input.textContent = "0"
             }
-
             if (btn.textContent === "+") {
 
                 operatorStore = btn.textContent
@@ -44,7 +44,8 @@ buttons.forEach(function (btn) {
             }
             else if (btn.textContent === "%") {
 
-                operatorStore = btn.textContent
+                operent2 = parseInt(userValueStore) % 2
+                output.textContent = operent2
             }
             else {
                 operatorStore = btn.textContent
@@ -53,6 +54,7 @@ buttons.forEach(function (btn) {
         else if (btn.textContent === "AC") {
 
             operent1 = ""
+            operent2 = null
             input.textContent = "0"
             output.textContent = "0"
         }
@@ -84,6 +86,5 @@ buttons.forEach(function (btn) {
             operent1 += btn.textContent
             input.textContent = operent1
         }
-
     })
 })
