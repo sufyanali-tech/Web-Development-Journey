@@ -1,13 +1,89 @@
-let screenOutput = document.querySelector("#operend-one")
+let input = document.querySelector("#operend-one")
+let output = document.querySelector("#output")
 let buttons = document.querySelectorAll("button");
-let userValueStoring = null
 
-buttons.forEach(function(btn) {
+let operent1 = ""
+let operent2 = null
+let userValueStore = ""
+let operatorStore = ""
 
-    btn.addEventListener("click", function() {
+buttons.forEach(function (btn) {
 
-        // console.log(btn.textContent);
-        screenOutput.textContent = btn.textContent
+    btn.addEventListener("click", function () {
+
+        if (["+", "-", "x", "÷", "%", "+/-"].includes(btn.textContent)) {
+
+            if (operent2) {
+
+                userValueStore = operent2
+                operent1 = ""
+                input.textContent = "0"
+            }
+            else {
+
+                userValueStore = operent1
+                operent1 = ""
+                input.textContent = "0"
+            }
+
+            if (btn.textContent === "+") {
+
+                operatorStore = btn.textContent
+            }
+            else if (btn.textContent === "-") {
+
+                operatorStore = btn.textContent
+            }
+            else if (btn.textContent === "x") {
+
+                operatorStore = btn.textContent
+            }
+            else if (btn.textContent === "÷") {
+
+                operatorStore = btn.textContent
+            }
+            else if (btn.textContent === "%") {
+
+                operatorStore = btn.textContent
+            }
+            else {
+                operatorStore = btn.textContent
+            }
+        }
+        else if (btn.textContent === "AC") {
+
+            operent1 = ""
+            input.textContent = "0"
+            output.textContent = "0"
+        }
+        else if (btn.textContent === "=") {
+
+            if (userValueStore && operatorStore === "+") {
+
+                operent2 = parseInt(userValueStore) + parseInt(operent1)
+                output.textContent = operent2
+            }
+            else if (userValueStore && operatorStore === "-") {
+
+                operent2 = parseInt(userValueStore) - parseInt(operent1)
+                output.textContent = operent2
+            }
+            else if (userValueStore && operatorStore === "x") {
+
+                operent2 = parseInt(userValueStore) * parseInt(operent1)
+                output.textContent = operent2
+            }
+            else if (userValueStore && operatorStore === "÷") {
+
+                operent2 = parseInt(userValueStore) / parseInt(operent1)
+                output.textContent = operent2
+            }
+        }
+        else {
+
+            operent1 += btn.textContent
+            input.textContent = operent1
+        }
 
     })
 })
